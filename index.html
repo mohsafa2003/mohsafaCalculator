@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator app</title>
+    
+    <link rel="stylesheet" href="CalcStyle.css">
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+
+    <div class="Container">
+        <div class="innerContainer">
+            <div id="resultBox"><label id="result">0</label></div><br>
+                <div class="keys">
+                    <button id="num1" class="num" onclick="appendDisplay('1');">1</button>
+                    <button id="num2" class="num" onclick="appendDisplay('2');">2</button>
+                    <button id="num3" class="num" onclick="appendDisplay('3');">3</button>
+                    <button id="operator+" class="operator" onclick="appendDisplay('+');">+</button>
+          
+                    <button id="num4" class="num" onclick="appendDisplay('4');">4</button>
+                    <button id="num5" class="num" onclick="appendDisplay('5');">5</button>
+                    <button id="num6" class="num" onclick="appendDisplay('5');">6</button>
+                    <button id="operator-" class="operator" onclick="appendDisplay('-');">-</button>
+          
+                    <button id="num7" class="num" onclick="appendDisplay('-');">7</button>
+                    <button id="num8" class="num" onclick="appendDisplay('8');">8</button>
+                    <button id="num9" class="num" onclick="appendDisplay('9');">9</button>
+                    <button id="operator/" class="operator" onclick="appendDisplay('/');">/</button>
+           
+                    <button id="num0" class="num" onclick="appendDisplay(0);">0</button>
+                    <button id="operator*" class="operator" onclick="appendDisplay('*');">*</button>
+                    <button id="operator." class="num" onclick="appendDisplay('.');">.</button>
+
+                    <button id="reset" class="operator" onclick="Clear();" value="C">C</button>
+                    
+                </div> 
+            <button id="equationResult" class="resultBtn" value="=" >=</button>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <footer>
+            <p>Created by Mohammad Safa &COPY;| <a href="mailto:mohsafabuisness2003@gmail.com">Contact me</a></p>
+            <p>Created in 18th of August 2024</p>
+            <p>Check out my other work on <a href="https://github.com/mohsafa2003/moh-safa-form.github.io">github</a></p>
+            <p>Background Image provided by <a href="https://www.freepik.com/free-vector/abstract-classic-blue-background_6600409.htm#query=minimalist%20blue%20background&position=5&from_view=keyword&track=ais_hybrid&uuid=3fb5d641-25f3-495b-8e59-7938eaf3d79b">Freepik.com</a> </p>
+        </footer>
+    </div>
+
+    <script src="CalculatorScript.js"></script>
+</body>
+</html>
